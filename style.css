@@ -1,0 +1,98 @@
+body{
+    margin:0px;
+    background-color: rgb(238, 238, 239);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+@font-face {
+    font-family: "odin";
+    src: url(./Norse-Bold.otf);
+}
+
+.leftContainer{
+    height: 100vh;
+    width: 35vw;
+    background-color: blue;
+    background-image: url(./8hpbut4p.png);
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.subContainer,
+.aboveForm{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 0rem 1rem 0rem 1rem;
+    font-weight:bold;
+   
+}
+
+.subContainer>p{
+    padding-right: 10rem;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border:2px solid white;
+    box-shadow: -0px 3px 10px 0px rgb(156, 156, 156);
+    height: 40vh;
+
+}
+
+.formContainer .aboveForm{
+    align-self:flex-start;
+    padding: 0px 1rem;
+
+}
+
+ul{
+    list-style: none;
+}
+form{
+    display: flex;
+    height: 75%;
+    flex:1 1 auto;
+
+}
+
+
+.leftList,
+.rightList{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 45%;
+    justify-content: space-evenly;
+    flex:1;
+    margin:0px
+}
+
+
+label,
+input{
+    box-sizing: border-box;
+    width: 80%;
+    display: inline-block;
+
+}
+label{
+    margin-bottom : 2px;
+}
+
+input{
+    margin-bottom: 10px;
+}
