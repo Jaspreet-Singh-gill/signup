@@ -29,16 +29,59 @@
                 </p>
 
                 <div class="formContainer">
+                    <div class="aboveForm">
+                        <p>Let's do this</p>
+                    </div>
+                    <form action="#" method="post" id ="formSubmit" >
+
+                        <ul class ="leftList">
+                            <li>
+                                <label for="firstName"> first name *</label>
+                                <input type="text" id ="firstName" name ="first-name" placeholder="john" required >
+                            </li>
+
+                            <li>
+                                <label for="userEmail"> email *</label>
+                                <input type="email" id ="userEmail" name ="user-email"  placeholder="your@email.com" required >
+                            </li>
+
+                            <li>
+                                <label for="userpassword">password *</label>
+                                <input type="password" id ="userpassword"  name ="user-password" required >
+                            </li>
+                        </ul>
+
+
+                        <ul class ="rightList">
+                            <li>
+                                <label for="lastName"> last name *</label>
+                                <input type="text" id ="lastName" name="last-name" placeholder="rockfeller" required >
+                            </li>
+
+                            <li>
+                                <label for="userNumber"> phone numner</label>
+                                <input type="tel" id ="userNumber"  name ="user-phone-number" placeholder="123456789">
+                            </li>
+
+                            <li>
+                                <label for="conformPassword"> conform password</label>
+                                <input type="password" id ="conformPassword" name ="user-confirm-password" required>
+                            </li>
+
+
+                        </ul>
+                        
+                    </form>
 
                 </div>
 
                 <div class="formFooter">
-                    <button type ="submit">
+                    <button type ="submit" form ="formSubmit">
                         Create Account
                     </button>
 
                     <p>
-                        Already have an account? <a>Log in</a>
+                        Already have an account? <a href="#">Log in</a>
                     </p>
                 </div>
 
