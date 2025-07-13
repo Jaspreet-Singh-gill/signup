@@ -163,3 +163,43 @@ a{
     color: white;
 
 }
+
+
+
+input{
+    border:1px solid gray;
+    border-radius: 5px;
+    min-height: 25px;
+}
+
+
+
+input:focus{
+    
+    outline-color: rgb(6, 76, 255);
+}
+
+input:invalid{
+    outline-color: red;
+}
+
+li{
+    position: relative;
+}
+li:has(input:valid)::after{
+    position: relative;
+    content:"✓";
+    color: green;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+li:has(input:invalid)::after{
+    position: relative;
+    content:"❌";
+    color: rgb(245, 11, 11);
+    font-size: inherit;
+    padding-left: 10px;
+    font-weight: bold;
+}
